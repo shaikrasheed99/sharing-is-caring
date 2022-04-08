@@ -14,4 +14,16 @@ public class FriendTest {
 
         verify(mockedSharingService, times(1)).share(friendTwo);
     }
+
+    @Test
+    void shouldNotShareWhenChocolatesAreLessThanTwo() {
+        Friend friendOne = new Friend(1);
+        Friend friendTwo = new Friend(1);
+        SharingService mockedSharingService = mock(SharingService.class);
+
+        friendOne.makeFriend(friendTwo);
+        friendOne.share(mockedSharingService);
+
+        verify(mockedSharingService, times(0)).share(friendTwo);
+    }
 }
