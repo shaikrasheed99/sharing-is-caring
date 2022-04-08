@@ -4,7 +4,7 @@ import static org.mockito.Mockito.*;
 
 public class FriendTest {
     @Test
-    void shouldAbleToShareChocolateWithAnotherFriend() {
+    void shouldAbleToShareWhenChocolatesAreGreaterThanTwo() {
         Friend friendOne = new Friend(4);
         Friend friendTwo = new Friend(0);
         SharingService mockedSharingService = mock(SharingService.class);
