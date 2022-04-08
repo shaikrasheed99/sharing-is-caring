@@ -1,4 +1,4 @@
-#Sharing-is-caring
+# Sharing-is-caring
 * This is simple scenario to understand how Mockito frameworks actually works.
 * The scenario is, there is a good friend, who have a habit of sharing chocolates, when he has more than two.
 * To share his chocolates along with his friends, he uses fully tested sharing service.
